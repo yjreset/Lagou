@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>拉勾网 BY 杨杰</title>
+	<link rel="stylesheet" href="css/skin.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="scripts/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.sliphover.js"></script>
+	<script type="text/javascript" src="scripts/jquery.sliphover-min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/banner2.js"></script>
+	<script type="text/javascript" src="js/lunbo.js"></script>
+	<script type="text/javascript" src="js/colorbox.js"></script>
+	<script type="text/javascript" src="js/sliphover.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="tbar">
+			<div class="inner">
+				<div class="tbar_1">
+					<a href="#">拉勾APP</a>
+					<a href="#">进入企业版</a>
+				</div>
+				<div class="tbar_2">
+					<ul>
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="tnav">
+			<div class="inner">
+				<div class="tnav_1">
+					<a href="#"></a>
+					<div class="city">
+						<p>成都站</p>
+						<a id="CityChange" onclick="goColorBox();">[切换城市]</a>
+					</div>
+				</div>
+				<ul>
+					<li><a href="" class="shouye">首页</a></li>
+					<li><a href="">公司</a></li>
+					<li><a href="">一拍</a></li>
+					<li><a href="">言职</a></li>
+					<li><a href="">大鲲</a><div class="new"></div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="sidebar">
+			<div class="menubox">
+				<p>技术</p>
+				<a href="#">Java</a>
+				<a href="#">PHP</a>
+				<a href="#">C++</a>
+				<a href="#">Android</a>
+				<a href="#">iOS</a>
+				<a href="#">数据挖掘</a>
+				<a href="#">测试</a>
+				<a href="#">前端开发</a>
+				<a href="#">html5</a>
+				<a href="#">技术总监</a>
+				<a href="#">架构师</a>
+				<a href="#">CTO</a>
+			</div>
+			<div class="menubox">
+				<p>产品</p>
+				<a href="#">产品总监</a>
+				<a href="#">产品经理</a>
+				<a href="#">数据产品经理</a>
+				<a href="#">游戏策划</a>
+			</div>
+			<div class="menubox">
+				<p>设计</p>
+				<a href="">UI设计师</a>
+				<a href="">交互设计</a>
+				<a href="">网页设计师</a>
+				<a href="">平面设计师</a>
+				<a href="">视觉设计师</a>
+			</div>
+			<div class="menubox">
+				<p>运营</p>
+				<a href="">新媒体运营</a>
+				<a href="">编辑</a>
+				<a href="">数据运营</a>
+				<a href="">运营总监</a>
+				<a href="">COO</a>
+			</div>
+			<div class="menubox">
+				<p>市场与销售</p>
+				<a href="">市场推广</a>
+				<a href="">市场总监</a>
+				<a href="">市场策划</a>
+				<a href="">BD</a>
+				<a href="">销售总监</a>
+			</div>
+			<div class="menubox">
+				<p>职能</p>
+				<a href="">HR</a>
+				<a href="">行政</a>
+				<a href="">财务</a>
+				<a href="">审计</a>
+			</div>
+			<div class="menubox">
+				<p>金融</p>
+				<a href="">投资</a>
+				<a href="">融资</a>
+				<a href="">并购</a>
+				<a href="">风控</a>
+			</div>
+		</div>
+		<div class="intro">
+			<div id="sousuo">
+				<input type="text" placeholder="交互设计"/>
+				<input type="button" value="搜索" />
+			</div>
+			<dl>
+				<dt>热门搜索 :</dt>
+				<dd><a href="">BD</a></dd>
+				<dd><a href="">技术总监</a></dd>
+				<dd><a href="">C++</a></dd>
+				<dd><a href="">前端开发</a></dd>
+				<dd><a href="">新职位首投专场</a></dd>
+				<dd><a href="">PHP</a></dd>
+				<dd><a href="">测试</a></dd>
+				<dd><a href="">html5</a></dd>
+				<dd><a href="">拉勾APP</a></dd>
+			</dl>
+			<div class="img">
+				<div class="banner1">
+					<ul class="banner1_left">
+						<li><a href=""><img src="img/img1.png" alt=""></a></li>
+						<li><a href=""><img src="img/img2.png" alt=""></a></li>
+						<li><a href=""><img src="img/img3.png" alt=""></a></li>
+					</ul>
+					<div class="img_right">
+						<em></em>
+						<ul>
+							<li><i class="current"></i><img src="img/dakun.png" alt=""></li>
+							<li><i></i><img src="img/shilipai.png" alt=""></li>
+							<li><i></i><img src="img/hello.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<div class="banner2">
+					<ul>
+						<li>
+							<a href="">
+								<img src="img/ydfn.png" alt="" title="<h2 style='border-bottom:5px solid #50C2A9;margin:10px 8px 8px;text-align: center;font-size: 24px;line-height: 24px;padding-bottom: 8px;'>BBD</h2>
+									<p style='font-size: 12px;margin: 6px 8px;'>全球大数据金融风险管理专家</p>">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/xlykj.png" alt="" title="<h2 style='border-bottom:5px solid #50C2A9;margin:10px 8px 8px;text-align: center;font-size: 24px;line-height: 24px;padding-bottom: 8px;'>BBD</h2>
+									<p style='font-size: 12px;margin: 6px 8px;'>全球大数据金融风险管理专家</p>">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/lxt.png" alt="" title="<h2 style='border-bottom:5px solid #50C2A9;margin:10px 8px 8px;text-align: center;font-size: 24px;line-height: 24px;padding-bottom: 8px;'>BBD</h2>
+									<p style='font-size: 12px;margin: 6px 8px;'>全球大数据金融风险管理专家</p>">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/BBD.png" alt="" title="<h2 style='border-bottom:5px solid #50C2A9;margin:10px 8px 8px;text-align: center;font-size: 24px;line-height: 24px;padding-bottom: 8px;'>BBD</h2>
+									<p style='font-size: 12px;margin: 6px 8px;'>全球大数据金融风险管理专家</p>">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/rsxx.png" alt="" title="<h2 style='border-bottom:5px solid #50C2A9;margin:10px 8px 8px;text-align: center;font-size: 24px;line-height: 24px;padding-bottom: 8px;'>BBD</h2>
+									<p style='font-size: 12px;margin: 6px 8px;'>全球大数据金融风险管理专家</p>">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="img/ws.png" alt="" title="<h2 style='border-bottom:5px solid #50C2A9;margin:10px 8px 8px;text-align: center;font-size: 24px;line-height: 24px;padding-bottom: 8px;'>BBD</h2>
+									<p style='font-size: 12px;margin: 6px 8px;'>全球大数据金融风险管理专家</p>">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="workIntro">
+				<div class="c_nav">
+					<ul>
+						<li class="current">热门职位</li>
+						<li>最新职位</li>
+					</ul>
+				</div>
+				<div id="job">
+					<div class="jobList">
+						<ul>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+						</ul>
+						<a href="">查看更多</a>
+					</div>
+					<div class="jobList hide">
+						<ul>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">yun&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">cd简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">yun&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">cd简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+							<li>
+								<div class="pli_top">
+									<div class="pli_top1">
+										<div class="position_name">
+											<a href="">运营经理&nbsp;&nbsp;[成都]</a>
+											<span>&nbsp;12:02发布</span>
+										</div>
+										<div><span class="red">8k-15k</span> <span>经验3-5年 / 大专</span> </div>
+									</div>
+									<div class="pli_top2">
+										<div class="company_name">成都简家网络科技有限公司
+										</div>
+										<div class="industry">电子商务,移动互联网 / 初创型(不需要融资)</div>
+									</div>
+								</div>
+								<div class="pli_footer">
+									“五险一金,年底双薪”
+								</div>
+							</li>
+						</ul>
+						<a href="">查看更多</a>
+					</div>
+				</div>
+				<div class="link_list">
+					<dl>
+						<dt><a>友情链接:</a></dt>
+						<dd>
+							<a href="">拉勾网</a><span>丨</span>
+							<a href="">拉勾云</a><span>丨</span>
+							<a href="">大鲲</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+							<a href="">中大网校</a><span>丨</span>
+						</dd>
+						<a id="zk">展开</a>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fixed" id="fixed">
+		<div>
+			<img src="img/footbar_logo.png" alt="" class="img1">
+			<img src="img/footbar_img.png" alt="" class="img2">
+			<span class="first">144944</span><span class="last">2469673</span>
+			<a href="" class="login">登录</a>
+			<a href="" class="register">极速注册→</a>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<img src="img/footer_lagou_icon.png" alt="">
+			<div class="inner">
+				<a href="">拉勾APP<img src="img/ewm1.png"></a>
+				<a href="">拉勾APP</a>
+				<a href="">拉勾APP</a>
+				<a href="">拉勾APP</a>
+				<a href="">拉勾APP</a>
+				<a href="">拉勾APP</a>
+				<a href="">拉勾APP</a>
+			</div>
+			<div class="copyright">
+				<img src="img/security_association.png" alt="">
+				<span>©2016 Lagou 京公网安备11010802017116号</span>
+			</div>
+		</div>
+	</div>
+	<div class="bkfk">
+		<div class="backtop" id="backtop">
+			<a></a>
+		</div>
+		<div class="fk" id="fk">
+			<a></a>
+		</div>
+		<div class="fk_word" id="fk_word">
+			<p>我要反馈</p>
+		</div>
+	</div>
+	<div style="display: none;">
+		<div id='inline_content' style='background:#fff;'>
+			<div class="city_change">
+				<div class="city_change_header">
+					<p class="title">亲爱的用户您好:</p>
+					<p class="tips">切换城市分站，让我们为您提供更准确的职位信息。</p>
+				</div>
+				<p class="checktips">点击进入
+					<a class="tab_focus">成都站</a>or 切换到以下城市
+				</p>
+				<ul>
+					<li><a href="">全国站</a></li>
+					<li><a href="">北京站</a></li>
+					<li><a href="">上海站</a></li>
+					<li><a href="">杭州站</a></li>
+					<li><a href="">广州站</a></li>
+					<li><a href="">深圳站</a></li>
+				</ul>
+				<p class="city_change_footer">其他城市正在开通中，敬请期待～</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
